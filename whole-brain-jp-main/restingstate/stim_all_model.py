@@ -258,7 +258,7 @@ def main():
         nrp = NRP(IP)
         simulation_num = int(simulation_time / 100)
         fr1, fr2 = 0.0, 0.0
-        for n range(simulation_num):
+        for n in range(simulation_num):
             # rate is firing rate of S1 L4 Pyr
             # fr is firing rate of M1 L5B PT
 

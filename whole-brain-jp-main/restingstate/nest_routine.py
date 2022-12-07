@@ -363,68 +363,52 @@ def add_poisson_generator(layer_gid, n_type, layer_name, ignore_time, region):  
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
         if n_type == "I":
             if layer_name in ['S1_L1_SBC']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 600.0, "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 600.0, "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L1_ENGC']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 600.0, "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 600.0, "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L2_SST']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 600.0, "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 600.0, "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L2_VIP']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 1000.0, "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 1000.0, "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L2_PV']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 800.0, "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 800.0, "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L3_SST']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 600.0, "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 600.0, "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L3_VIP']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 1000.0, "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 1000.0, "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L3_PV']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 800.0, "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 800.0, "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L4_SST']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 600.0, "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 600.0, "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L4_PV']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 900.0, "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 900.0, "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L5A_SST']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 700., "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 700., "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L5A_PV']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 1350.0, "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 1350.0, "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L5B_SST']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 680., "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 680., "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L5B_PV']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 1350.0, "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 1350.0, "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L6_SST']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 680.5, "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 680.5, "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
             elif layer_name in ['S1_L6_PV']:
-                PSG = nest.Create('poisson_generator', 1, params={'rate': 1350.0, "start": float(
-                    ini_time_ini)})  # , 'label': layer_name})
+                PSG = nest.Create('poisson_generator', 1, params={'rate': 1350.0, "start": float(ini_time_ini)})  # , 'label': layer_name})
                 nest.Connect(pre=PSG, post=nest.GetNodes(layer_gid)[0], syn_spec={'weight': 5.0, 'delay': 1.5})
 
     elif region == 'TH': 
